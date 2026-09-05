@@ -17,7 +17,7 @@ MacFullStack is a native macOS app (Apple Silicon) that runs PHP, nginx, MySQL/M
 
 | Platform | Requirement | File |
 |----------|-------------|------|
-| macOS | 14+, Apple Silicon (arm64) | [MacFullStack-1.1.6-arm64.dmg](../../releases/download/v1.1.6/MacFullStack-1.1.6-arm64.dmg) |
+| macOS | 14+, Apple Silicon (arm64) | [MacFullStack-1.1.7-arm64.dmg](../../releases/download/v1.1.7/MacFullStack-1.1.7-arm64.dmg) |
 
 **Free tier:** one PHP project + core services (MySQL/MariaDB, Redis, Mailpit, phpMyAdmin) — no card required.
 
@@ -31,19 +31,18 @@ MacFullStack is a native macOS app (Apple Silicon) that runs PHP, nginx, MySQL/M
 - **Any CMS** — auto docroot detection and nginx rewrites (Laravel, WordPress, Bitrix, legacy PHP)
 - **Custom domains** — `.localhost`, custom zones, aliases, wildcards
 - **Dev tools in-app** — Mailpit, SQL console, Doctor, ⌘K palette, MCP for Cursor
-- **Project Studio (Pro)** — file tree, tabbed editor, logs, terminal, `.env` dock
+- **Project Studio (Pro)** — editor, split view, Git dock, logs, terminal, `.env`
 - **FTP Manager & Deploy Profiles (Pro)** — sync to shared hosting with a guided checklist
 
 ---
 
-## What's new in 1.1.6
+## What's new in 1.1.7
 
-- **Project Studio (Pro)** — sidebar workspace: file tree, syntax-highlighted editor, line numbers, find/replace, go-to-line, bottom dock (logs / terminal / `.env`)
-- Compact Studio toolbar aligned with SQL console and Terminal
-- Cursor position and open tabs persist between sessions
-- UI in Russian, English, and German
+- **Project Studio (Pro)** — Quick Open, project search, split editor, pinned tabs, breadcrumbs, detached window
+- **Git dock** — stage / unstage / discard, commit, amend, push / fetch / pull (`--ff-only`), ahead/behind, colored diff
+- **MCP for Cursor** — local `macstack mcp` tools for projects, stack control, Doctor, logs, safe `db_ping` (`SELECT 1` only)
 
-Full notes: [changelog #2026-08-app-1-1-6](https://macfullstack.com/changelog#2026-08-app-1-1-6)
+Full notes: [RELEASE_NOTES_v1.1.7.md](./RELEASE_NOTES_v1.1.7.md) · [changelog](https://macfullstack.com/changelog#2026-09-app-1-1-7)
 
 ---
 
@@ -57,14 +56,14 @@ Full notes: [changelog #2026-08-app-1-1-6](https://macfullstack.com/changelog#20
 
 ## Verify download (optional)
 
-SHA-256 of `MacFullStack-1.1.6-arm64.dmg`:
+SHA-256 of `MacFullStack-1.1.7-arm64.dmg`:
 
 ```
-cc6f90abc4750463d48db0a4f30926ae158a6fffd5637678ebbab4a02275f1dc
+da81f48768c1a4f252a8a13cde08c0f565011cbccd4c4b20ebc1811d6ca5115c
 ```
 
 ```bash
-shasum -a 256 MacFullStack-1.1.6-arm64.dmg
+shasum -a 256 MacFullStack-1.1.7-arm64.dmg
 ```
 
 ---
